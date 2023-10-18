@@ -17,7 +17,7 @@ header {
   align-items: center;
 }
 
-header .logo {
+.logo {
   width: 80px;
   height: 80px;
   background-image: url("../images/portlogo.png");
