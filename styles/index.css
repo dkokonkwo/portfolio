@@ -51,11 +51,12 @@ main {
   display: flex;
   color: #484848;
   font-size: 45px;
-  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-bottom: 50px;
   padding: 10px;
   position: relative;
-  bottom: 270px;
+  bottom: 240px;
+  right: 40px;
   justify-content: center;
 }
 

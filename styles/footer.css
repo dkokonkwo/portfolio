@@ -38,6 +38,21 @@ footer p {
 .logo-column {
   display: flex;
   flex-direction: column;
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+}
+
+.logo-column .logo {
+  margin: 10px;
+}
+
+address {
+  font-size: 16px;
+  position: relative;
+  top: 20px;
+  left: 13px;
+  line-height: 1.8;
 }
 
 .socials {
