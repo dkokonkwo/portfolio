@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* background-image: linear-gradient(
+      rgba(192, 192, 192, 0.5),
+      rgba(192, 192, 192, 0.5)
+    ),
+    url(../images/landing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+  font-size: 14px;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #484848;
+}
+
+main {
+  flex: 1;
+  margin: 0;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+  border: 2px solid #ff3131;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 4%;
+  position: relative;
+  right: 30px;
+}
+
+.intro h1 {
+  display: flex;
+  font-size: 45px;
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-bottom: 50px;
+  padding: 10px;
+  position: relative;
+  bottom: 170px;
+  justify-content: center;
+}
+
+.intro p {
+  font-size: 27px;
+  font-weight: 550;
+  position: relative;
+  bottom: 150px;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5;
+}
+
+.side-image {
+  background-image: url(../images/homepage1.jpg);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  height: 700px;
+  position: relative;
+  right: 60px;
+}
+
+.contact {
+    position: relative;
+    bottom: 135px;
+    right: 282px;
+}
+
+.contact button {
+    font-size: 25px;
+    font-style: none;
+}

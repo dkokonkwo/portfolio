@@ -1,0 +1,62 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 90px;
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cover {
+  height: 100%;
+  width: 60%;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  width: 80px;
+  height: 80px;
+  background-image: url("../images/portlogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  float: left;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  align-items: center;
+  height: 100%;
+  margin: 50px;
+}
+
+.links ul,
+.links li {
+  list-style: none;
+}
+
+.links li {
+  width: 160px;
+  font-size: 25px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #ff3131;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  transition: 0.3s all;
+}
+
+.links a:hover {
+  border-bottom: 5px solid #a6a6a6;
+}
