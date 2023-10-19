@@ -1,0 +1,150 @@
+.contact-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-image {
+  background-image: linear-gradient(
+      rgba(192, 192, 192, 0.1),
+      rgba(192, 192, 192, 0.6)
+    ),
+    url(../images/contact1.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  margin: 0px;
+}
+
+.contact-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: monospace;
+  height: 120px;
+  box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.contact-form {
+  display: flex;
+  width: 33%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form textarea {
+  width: 100%;
+  background: white;
+  border: 1px solid #ff3131;
+  border-radius: 8px;
+  height: 50px;
+  font-size: 16px;
+  color: #484848;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 150px;
+}
+
+.contact-form input[type="text"],
+input[type="email"] {
+  width: 100%;
+  background: white;
+  border: 0.5px solid #ff3131;
+  border-radius: 8px;
+  height: 50px;
+  font-size: 16px;
+  color: #484848;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.contact-form ul {
+  padding: 0;
+  margin: 0;
+}
+
+.contact-form ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 10px;
+  opacity: 1;
+  overflow: hidden;
+  display: block;
+  clear: both;
+  position: relative;
+  animation: fadeInUp 2s 2s;
+  animation-fill-mode: forwards;
+}
+
+.contact-details ul li.half {
+  width: 50%;
+  margin-left: 0%;
+  float: left;
+  clear: none;
+}
+
+.contact-details ul li.half &:first-child {
+  margin-left: 0;
+}
+
+.flat-button {
+  color: #ff3131;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 1px solid #ff3131;
+  float: left;
+  border-radius: 4px;
+  background: 0 0;
+  text-transform: uppercase;
+  float: right;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.contact-info {
+  width: 35%;
+  height: 270px;
+  margin: 20px;
+  border: 1px solid #ff3131;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.contact-info h3 {
+  font-size: 30px;
+}
+
+.contact-info p {
+  font-size: 18px;
+}
+
+/* @media screen and (max-width: 1200px) {
+  .map-wrap {
+    float: none;
+    margin: 0;
+    width: 100%;
+    height: 400px;
+  }
+
+  .info-map {
+    display: none;
+  }
+} */
