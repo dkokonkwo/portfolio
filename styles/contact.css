@@ -136,6 +136,16 @@ input[type="email"] {
   font-size: 18px;
 }
 
+.dk-det {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+}
+
+.dk-det i {
+  color: #ff3131;
+}
 /* @media screen and (max-width: 1200px) {
   .map-wrap {
     float: none;
