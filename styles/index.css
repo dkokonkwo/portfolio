@@ -51,7 +51,7 @@ main {
   display: flex;
   color: #484848;
   font-size: 45px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: monospace;
   margin-bottom: 50px;
   padding: 10px;
   position: relative;
@@ -87,6 +87,7 @@ main {
 .contact button {
     font-size: 25px;
     font-style: none;
+    font-family: monospace;
     width: 200px;
     height: 50px;
     border: 2px solid #ff3131;
