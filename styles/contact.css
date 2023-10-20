@@ -111,6 +111,12 @@ input[type="email"] {
   float: right;
   text-align: center;
   margin-right: 10px;
+  transition: 0.3s all;
+}
+
+.flat-button:hover {
+  color: white;
+  background: #ff3131;
 }
 
 .contact-info {
