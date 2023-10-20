@@ -66,43 +66,123 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.5;
+}
+
+.row a {
+  background: yellow;
+  padding: 0px;
+  margin: 3px;
+  transform: scale(0.9);
+  text-decoration: none;
+}
+
+.display {
+  margin: 0;
+  padding: 0px;
+  visibility: hidden;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.row p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-left: 10px;
+}
+
+.row h4 {
+  color: #ff3131;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .triviaGeo {
   background-image: url(../images/triviageo1.jpg);
   width: 500px;
   height: 350px;
-  transform: scale(0.9);
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
   border-radius: 7px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.triviaGeo:hover {
+    .display {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  background-image: linear-gradient(
+      rgba(38, 38, 38, 0.9),
+      rgba(38, 38, 38, 0.9)
+    ), url(../images/triviageo1.jpg)
 }
 
 .Percolation {
   background-image: url(../images/percolation1.jpg);
   width: 500px;
   height: 350px;
-  transform: scale(0.9);
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
   border-radius: 7px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.Percolation:hover {
+    .display {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  background-image: linear-gradient(
+      rgba(38, 38, 38, 0.9),
+      rgba(38, 38, 38, 0.9)
+    ), url(../images/percolation1.jpg)
 }
 
 .knock-glass {
   background-image: url(../images/knockglass1.jpg);
   width: 500px;
   height: 350px;
-  transform: scale(0.9);
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
   border-radius: 7px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.knock-glass:hover {
+    .display {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  background-image: linear-gradient(
+      rgba(38, 38, 38, 0.9),
+      rgba(38, 38, 38, 0.9)
+    ), url(../images/knockglass1.jpg)
 }
 
 .pygame {
   background-image: url(../images/2dgame1.jpg);
   width: 500px;
   height: 350px;
-  transform: scale(0.9);
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
   border-radius: 7px;
   color: white;
@@ -112,7 +192,6 @@
   background-image: url(../images/menu1.jpg);
   width: 500px;
   height: 350px;
-  transform: scale(0.9);
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
   border-radius: 7px;
   color: white;
@@ -122,7 +201,6 @@
   background-image: url(../images/nft1.jpg);
   width: 500px;
   height: 350px;
-  transform: scale(0.9);
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
   border-radius: 7px;
   color: white;
@@ -132,7 +210,6 @@
   background-image: url(../images/spike1.jpg);
   width: 500px;
   height: 350px;
-  transform: scale(0.9);
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
   border-radius: 7px;
   color: white;
@@ -142,7 +219,6 @@
   background-image: url(../images/airbnb1.jpg);
   width: 500px;
   height: 350px;
-  transform: scale(0.9);
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
   border-radius: 7px;
   color: white;
