@@ -191,14 +191,14 @@ input[type="email"] {
 
   .contact-form {
     width: 70%;
-    transform: scale(0.8);
+    transform: scale(0.9);
   }
 
   .contact-info {
-    transform: scale(0.8);
+    transform: scale(0.9);
     padding: 0;
     margin: 0;
-    width: 80%;
+    width: 95%;
   }
 
   .contact-info h3 {
