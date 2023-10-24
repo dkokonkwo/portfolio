@@ -60,6 +60,11 @@ address {
   flex-direction: row;
 }
 
+.socials a {
+  text-decoration: none;
+  color: white;
+}
+
 .policy ul {
   display: flex;
   flex-direction: row;
@@ -94,4 +99,32 @@ address {
 i {
   margin: 20px;
   font-size: 30px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 852px) {
+  .top-boy {
+    width: 100%;
+  }
+
+  .bottom-boy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .top-boy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-column {
+    align-items: center;
+    justify-content: center;
+  }
 }
