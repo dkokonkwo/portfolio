@@ -25,9 +25,21 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 15px;
-  justify-content: space-around;
-  margin-top: 100px;
+  margin-top: 60px;
+}
+
+.intro_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: 700px;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
 }
 
 .intro {
@@ -36,67 +48,71 @@ main {
   align-items: center;
   background: #484848;
   color: white;
-  width: 50%;
   height: 400px;
+  width: 90%;
   padding: 20px;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
-  position: relative;
-  right: 30px;
-  top: 130px;
   margin-bottom: 30px;
 }
 
-.intro h1 {
+.heading {
   display: flex;
   color: #484848;
-  font-size: 45px;
+  font-size: 28px;
   font-family: monospace;
   margin-bottom: 50px;
-  padding: 10px;
-  position: relative;
-  bottom: 240px;
-  right: 40px;
+  padding: 2px;
   justify-content: center;
 }
 
 .intro p {
   font-size: 23px;
   font-weight: 550;
-  position: relative;
-  bottom: 150px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   line-height: 1.5;
 }
 
 .side-image {
   background-image: url(../images/homepage1.jpg);
+  background-size: cover;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
-  width: 500px;
+  width: 45%;
   height: 700px;
-  position: relative;
-  right: 60px;
-}
-
-.contact {
-    position: relative;
-    bottom: 90px;
-    right: 275px;
+  border-radius: 8px;
 }
 
 .contact button {
-    font-size: 25px;
-    font-style: none;
-    font-family: monospace;
-    width: 200px;
-    height: 50px;
-    border: 2px solid #ff3131;
-    background: none;
-    color: white;
-    transition: 0.3s ease-out;
-    cursor: pointer;
+  font-size: 25px;
+  font-style: none;
+  font-family: monospace;
+  width: 200px;
+  height: 50px;
+  border: 2px solid #ff3131;
+  background: none;
+  color: white;
+  transition: 0.3s ease-out;
+  cursor: pointer;
 }
 
 .contact button:hover {
   background: #ff3131;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 852px) {
+  .homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .intro {
+    width: 500px;
+  }
+
+  .intro h1 {
+    width: 700px;
+  }
 }
