@@ -23,7 +23,27 @@
         <div class="logo"></div>
         <ul class="links">
           <li>
-            <a href="./index.html">HOME</a>
+            <a href="/index.html">HOME</a>
+          </li>
+          <li>
+            <a href="./about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="./projects.html">PROJECTS</a>
+          </li>
+          <li>
+            <a href="./contact.html">CONTACT</a>
+          </li>
+        </ul>
+        <!-- <input type="checkbox" id="check"> -->
+        <div for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <div class="dropdown_menu open">
+        <ul>
+          <li>
+            <a href="/index.html">HOME</a>
           </li>
           <li>
             <a href="./about.html">ABOUT</a>
@@ -36,6 +56,18 @@
           </li>
         </ul>
       </div>
+      <script>
+        const toggleBtn = document.querySelector(".checkbtn");
+        const toggleBtnIcon = document.querySelector(".checkbtn i");
+        const dropDownMenu = document.querySelector(".dropdown_menu");
+
+        toggleBtn.onclick = function () {
+          dropDownMenu.classList.toggle("open");
+          const isOpen = dropDownMenu.classList.contains("open");
+
+          toggleBtnIcon.classList = isOpen ? "fas fa-xmark" : "fas fa-bars";
+        };
+      </script>
     </header>
     <!-- main -->
     <main class="projects-page">
