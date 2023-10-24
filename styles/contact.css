@@ -112,6 +112,7 @@ input[type="email"] {
   text-align: center;
   margin-right: 10px;
   transition: 0.3s all;
+  cursor: pointer;
 }
 
 .flat-button:hover {
