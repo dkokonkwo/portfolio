@@ -80,3 +80,34 @@
   background: #ff3131;
   color: white;
 }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 852px) {
+  .about-desc {
+    font-weight: 600;
+    margin: 20px;
+    padding: 10px;
+    width: 90%;
+    height: 450px;
+    border-radius: 10px;
+    line-height: 2;
+  }
+  .about-desc p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-desc {
+    font-weight: 600;
+    margin: 20px;
+    padding: 10px;
+    width: 90%;
+    height: 750px;
+    border-radius: 10px;
+    line-height: 2;
+  }
+  .about-desc p {
+    font-size: 15px;
+  }
+}
