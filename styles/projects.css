@@ -1,6 +1,9 @@
 .projects-page {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .projects-image {
@@ -68,12 +71,11 @@
   justify-content: center;
   font-family: "Courier New", Courier, monospace;
   line-height: 1.5;
+  width: 100%;
 }
 
 .row a {
-  background: yellow;
   padding: 0px;
-  margin: 3px;
   transform: scale(0.9);
   text-decoration: none;
 }
@@ -116,7 +118,7 @@
 }
 
 .triviaGeo:hover {
-    .display {
+  .display {
     opacity: 1;
     visibility: visible;
   }
@@ -124,7 +126,8 @@
   background-image: linear-gradient(
       rgba(38, 38, 38, 0.9),
       rgba(38, 38, 38, 0.9)
-    ), url(../images/triviageo1.jpg)
+    ),
+    url(../images/triviageo1.jpg);
 }
 
 .Percolation {
@@ -142,7 +145,7 @@
 }
 
 .Percolation:hover {
-    .display {
+  .display {
     opacity: 1;
     visibility: visible;
   }
@@ -150,7 +153,8 @@
   background-image: linear-gradient(
       rgba(38, 38, 38, 0.9),
       rgba(38, 38, 38, 0.9)
-    ), url(../images/percolation1.jpg)
+    ),
+    url(../images/percolation1.jpg);
 }
 
 .knock-glass {
@@ -168,7 +172,7 @@
 }
 
 .knock-glass:hover {
-    .display {
+  .display {
     opacity: 1;
     visibility: visible;
   }
@@ -176,11 +180,13 @@
   background-image: linear-gradient(
       rgba(38, 38, 38, 0.9),
       rgba(38, 38, 38, 0.9)
-    ), url(../images/knockglass1.jpg)
+    ),
+    url(../images/knockglass1.jpg);
 }
 
 .pygame {
   background-image: url(../images/2dgame1.jpg);
+  background-size: cover;
   width: 500px;
   height: 350px;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
@@ -231,4 +237,68 @@
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
   border-radius: 7px;
   color: white;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 852px) {
+  .projects-image {
+    height: 350px;
+  }
+
+  .skills-desc {
+    width: 90%;
+    margin: 20px;
+    padding: 20px;
+    height: 500px;
+    font-size: 15px;
+    line-height: 1.9;
+    font-weight: 550;
+  }
+
+  .works {
+    width: 70%;
+  }
+
+  .works h2 {
+    font-size: 50px;
+  }
+
+  .works h5 {
+    font-size: 14px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .projects-image {
+    height: 300px;
+  }
+
+  .skills-desc {
+    width: 85%;
+    height: 500px;
+    font-size: 13px;
+  }
+
+  .works {
+    width: 100%;
+  }
+
+  .works h2 {
+    font-size: 35px;
+  }
+
+  .works h5 {
+    font-size: 13px;
+  }
+
+  .row a {
+    transform: scale(0.8);
+    margin: 0;
+  }
 }
