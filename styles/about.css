@@ -83,6 +83,10 @@
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 852px) {
+.title {
+  font-size: 28px;
+}
+
   .about-desc {
     font-weight: 600;
     margin: 20px;
@@ -117,4 +121,8 @@
   .about-desc p {
     font-size: 15px;
   }
+
+  .title {
+  font-size: 25px;
+}
 }
