@@ -380,6 +380,10 @@
     align-items: center;
     justify-content: center;
   }
+
+  .row a {
+    transform: scale(0.85);
+  }
 }
 
 @media (max-width: 576px) {
@@ -407,6 +411,6 @@
 
   .row a {
     transform: scale(0.8);
-    margin: 0;
+    margin: 5px;
   }
 }
