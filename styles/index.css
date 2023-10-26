@@ -16,7 +16,7 @@ body {
   font-size: 14px;
   font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #484848;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 main {
