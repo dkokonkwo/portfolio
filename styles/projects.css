@@ -414,36 +414,3 @@
     margin: 5px;
   }
 }
-
-
-@media (max-width: 500px) {
-  .projects-image {
-    height: 200px;
-  }
-
-  .skills-desc {
-    width: 80%;
-    height: 600px;
-    font-size: 12px;
-    margin: 2px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .works {
-    width: 100%;
-  }
-
-  .works h2 {
-    font-size: 30px;
-  }
-
-  .works h5 {
-    font-size: 12px;
-  }
-
-  .row a {
-    transform: scale(0.7);
-    margin: 5px;
-  }
-}

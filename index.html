@@ -19,7 +19,7 @@
     ></script>
     <title>Home</title>
   </head>
-  <body>
+  <body class="body-ham">
     <!-- HEADER -->
     <header>
       <div class="cover">
@@ -60,16 +60,24 @@
         </ul>
       </div>
       <script>
-        const toggleBtn = document.querySelector(".checkbtn");
-        const toggleBtnIcon = document.querySelector(".checkbtn i");
-        const dropDownMenu = document.querySelector(".dropdown_menu");
+        document.addEventListener("DOMContentLoaded", function () {
+          const toggleBtn = document.querySelector(".checkbtn");
+          const toggleBtnIcon = document.querySelector(".checkbtn i");
+          const dropDownMenu = document.querySelector(".dropdown_menu");
 
-        toggleBtn.onclick = function () {
-          dropDownMenu.classList.toggle("open");
-          const isOpen = dropDownMenu.classList.contains("open");
+          toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open");
+            const isOpen = dropDownMenu.classList.contains("open");
 
-          toggleBtnIcon.classList = isOpen ? "fas fa-xmark" : "fas fa-bars";
-        };
+            toggleBtnIcon.classList = isOpen ? "fas fa-xmark" : "fas fa-bars";
+
+            if (isOpen) {
+              document.body.style.overflow = "hidden"; // Disable scrolling
+            } else {
+              document.body.style.overflow = "auto"; // Enable scrolling
+            }
+          };
+        });
       </script>
     </header>
     <!-- main -->
