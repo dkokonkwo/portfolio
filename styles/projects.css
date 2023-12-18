@@ -414,3 +414,9 @@
     margin: 5px;
   }
 }
+
+
+/* LINK TO RESUME */
+.skills-desc a {
+  color: #ff3131;
+}
